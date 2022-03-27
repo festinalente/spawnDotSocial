@@ -5,24 +5,37 @@
     <link rel="manifest", href="/manifest.json">
   </head>
   <body>
+    <interface></interface>
     <h1>A self spawning serverless social webapp.</h1>
     <h2>Purpose</h2>
     <p>To decentralize social interactions on the internet by removing social media companies from transactions</p>
     <h3>Publish text</h3>
     <p>Currently this is just a lame proof that we can save, edit, publish content in the browser. I will save the text to indexedDB and publish to IPFS, the app can "live" in the browser and doesn't need a server.</p>
+
     <textarea contenteditable="true" class="blogInput">Hello IPFS</textarea>
+    <div class="content">
+      <div class="menu"></div>
+      <!--posts are listed here-->
+      <div class="wall"></div>
+      <!--chat app-->
+      <div class="chat"></div>
+      <!--generates QR code etc for sharing-->
+      <div class="share"></div>
+    </div>
     <button class="blogPublish">Publish</button>
-    <h2>What else could be added?</h2>
-    <ul>
-      <li>video</li>
-      <li>images</li>
-      <li>chat app</li>
-    </ul>
+    </br>
+    <div class="postsSavedLocally">
+    </div>
+
   </body>
   <footer>
     <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
     <script type="text/javascript" src="/dexie.js"></script>
+    <script type="text/javascript" src="/events.js"></script>
+    <script type="text/javascript" src="/functions.js"></script>
+    <script type="text/javascript" src="/dom.js"></script>
     <script type="text/javascript" src="/other.js"></script>
     <script type="text/javascript" src="/sw.js"></script>
+    <script type="text/javascript" src="/bloggingEngine.js"></script>
   </footer>
 </html>

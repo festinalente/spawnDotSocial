@@ -17,6 +17,15 @@ E.g. https://ipfs.io/ipfs/"your content cid here" and will be saved in your brow
 - Content is saved locally in Indexed.DB which in effect gives access to the full scope of memory of a user's local environment.
 - Content is publish to IPFS.
 
+- Content published to IPFS is encrypted or not depending on who you want to share it with.
+- Instead of managing peers through
+- Key exchange.
+- It's a *poor* assumption to think any service, centralized or not offers anonymity.
+
+### Development
+To develop this app, run a server (e.g. nginx) to serve it so that updates are applied,
+otherwise the app will work without the server and updates not applied. 
+
 ### TODO:
 
 Right now it is just a crumby PWA that publishes text no one can find.
